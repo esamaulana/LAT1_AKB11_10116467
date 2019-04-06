@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitetree"
+    android:orientation="vertical"
+    tools:context=".loginCode">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="24dp"
+        android:layout_weight="0.1">
+
+        <TextView
+            android:id="@+id/kodeKeluarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Kode Keluarga"
+            android:textColor="@color/Hitam"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kodeKeluarga"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Ketikkan kode keluarga yang Ayah Bunda miliki disini"
+            android:textColor="@color/Hitam"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editKodeKeluarga"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/desc"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+            android:inputType="text"
+            android:text="A1B2C3"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descKetentuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editKodeKeluarga"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+            android:text="Dengan menekan tombol masuk berarti Anda menyetujui Ketentuan Pengguna dan  Kebijakan Data Kami"
+            android:textAlignment="center"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btnMasuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descKetentuan"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_round_kuning"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Masuk"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="0.3"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/noCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/rubik_regular"
+            android:gravity="center"
+            android:text="Belum Punya Kode Keluarga?"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/beliCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noCode"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/btn_round_ungu"
+            android:fontFamily="@font/rubik_regular"
+            android:textAllCaps="false"
+            android:textColor="@color/whitetree"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Beli Kode Keluarga Disini"/>
+    </RelativeLayout>
+
+</LinearLayout>
